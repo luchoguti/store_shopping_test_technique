@@ -1,6 +1,5 @@
-import {Modal, ModalClose, ModalContent} from "../../styles_components/ModalStyles";
-import SummarySteps from "../Summary/SummarySteps";
 import React from "react";
+import {Modal, ModalClose, ModalContent} from "../styles_components/ModalStyles";
 
 const SummaryModal = (props) => {
     return (
@@ -11,7 +10,9 @@ const SummaryModal = (props) => {
                 <ModalClose onClick={()=>{
                     props.setOpenStateModal(!props.open);
                 }}>&times;</ModalClose>
-                <SummarySteps home={false} modal={true}  display={true}/>
+                <p>
+                    test
+                </p>
             </ModalContent>
         </Modal>
     )
